@@ -3,131 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Bernache</title>
+    <title>Luis Bernache - QA Engineer</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #111;
+            color: #fff;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
+        .hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 20px;
         }
-        nav {
-            background: #333;
-            color: white;
-            padding: 0.5rem;
-            text-align: center;
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
         }
-        nav a {
-            color: white;
-            margin: 0 1rem;
+        .hero h2 {
+            font-size: 2em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .button {
+            display: inline-block;
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
             text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
         section {
-            margin-bottom: 2rem;
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
         }
         h2 {
-            color: #4CAF50;
+            font-size: 2em;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
         }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem 0;
-            background: #333;
-            color: white;
+        .experience .job, .education p, .skills ul, .courses p {
+            margin: 10px 0;
         }
-        a {
-            color: #4CAF50;
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            color: #fff;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Luis Bernache's Portfolio</h1>
+    <header class="hero">
+        <h1>Luis Bernache</h1>
+        <h2>QA Software Test Engineer</h2>
+        <p>"Quality Beyond Limits | Turning Challenges into Opportunities"</p>
+        <a href="#" class="button">Resume</a>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Luis Bernache, a QA Manual Tester with over 5 years of experience specializing in testing Android and iOS applications. 
-                I’m passionate about creating high-quality software and exploring automation testing with Python and frameworks like Selenium and Appium.</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>Bachelor’s Degree in Communications and Electronics Engineering from Universidad de Guadalajara</p>
-            <p>Additional Training: Python, Appium, QA Testing</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Manual Testing</li>
-                <li>Python</li>
-                <li>Appium</li>
-                <li>Android/iOS Testing</li>
-                <li>Team Collaboration</li>
-                <li>Attention to Detail</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Accessibility Testing for Mobile Apps</li>
-                <li><strong>Project 2:</strong> Usability Improvements in Infotainment Systems</li>
-                <li><strong>Project 3:</strong> [Future Python Automation Project]</li>
-            </ul>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>ISTQB Foundation Level training</li>
-                <li>Linux Mastery: Master the Linux Command Line</li>
-                <li>Basic course of Python</li>
-                <li>Automated Software Testing with Python</li>
-                <li>Selenium Webdriver with PYTHON from Scratch + Frameworks</li>
-                <li>Python for Beginners</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at: <a href="mailto:luisbernache94@gmail.com">luisbernache94@gmail.com</a></p>
-            <p>Connect with me on <a href="https://www.linkedin.com/in/luis-bernache-b94490168/">LinkedIn</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Luis Bernache. All Rights Reserved.</p>
-    </footer>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems...</p>
+    </section>
+    
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Specialist Engineer</h3>
+            <p>Teoresi Inc, Troy, MI, USA</p>
+        </div>
+        <div class="job">
+            <h3>Test Engineer</h3>
+            <p>Dextra Technologies, Zapopan, JAL, MX</p>
+        </div>
+    </section>
+    
+    <section class="education">
+        <h2>Education</h2>
+        <p>B.S. in Communications and Electronics Engineering</p>
+        <p>Universidad de Guadalajara (2013-2018)</p>
+    </section>
+    
+    <section class="skills">
+        <h2>Skills & Proficiencies</h2>
+        <ul>
+            <li>Manual Testing, Regression Testing, Functional Testing</li>
+            <li>Bug Tracking: JIRA, TestRail</li>
+            <li>Programming: (Currently Learning) Python, Selenium, Appium</li>
+        </ul>
+    </section>
+    
+    <section class="courses">
+        <h2>Courses & Licenses</h2>
+        <p>ISTQB Foundation Level 2022 Complete Training</p>
+        <p>Automated Software Testing with Python</p>
+    </section>
+    
+    <section class="projects">
+        <h2>Hands-on Projects</h2>
+        <p>Coming soon...</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Reach Out</h2>
+        <a href="mailto:your-email@example.com">Email</a>
+        <a href="https://github.com/yourgithub">GitHub</a>
+        <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
+    </section>
 </body>
 </html>
