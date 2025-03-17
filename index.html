@@ -60,6 +60,41 @@
             font-weight: bold;
             text-decoration: none;
         }
+    @media (max-width: 768px) {
+        .hero {
+            height: 100vh;
+            background-position: center 20%; /* Adjust image position for mobile */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem; /* Smaller text on mobile */
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .resume-button {
+            padding: 8px 16px; /* Slightly smaller button */
+            font-size: 0.9rem;
+        }
+
+        .nav {
+            position: relative;
+            bottom: auto;
+            display: flex;
+            flex-direction: column; /* Stack menu items on mobile */
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .nav a {
+            font-size: 1rem; /* Make menu links smaller */
+            display: block;
+            padding: 8px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -69,7 +104,7 @@
             <p>"Quality Beyond Limits | Turning Challenges into Opportunities"</p>
             <h1>Luis Bernache</h1>
             <h2>QA Software Test Engineer</h2>
-           <a href="LuisBernache_Resume.pdf" target="_blank">
+            <a href="LuisBernache_Resume.pdf" target="_blank">
                 <button class="resume-button">Resume</button>
             </a>
         </div>
