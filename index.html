@@ -3,122 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Bernache - QA Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Luis Bernache</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #111;
-            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
         }
         .hero {
-            background: url('hero-background.jpg') no-repeat center center/cover;
+            position: relative;
             height: 100vh;
+            background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 20px;
+            justify-content: center;
         }
-        .hero h1 {
-            font-size: 3em;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 3rem;
             font-weight: bold;
         }
-        .hero h2 {
-            font-size: 2em;
-        }
-        .hero p {
-            font-size: 1.2em;
-        }
-        .button {
-            display: inline-block;
-            background-color: #444;
-            color: #fff;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
         h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #fff;
-            padding-bottom: 10px;
+            font-size: 1.5rem;
         }
-        .experience .job, .education p, .skills ul, .courses p {
-            margin: 10px 0;
+        .resume-button {
+            background: gray;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
         }
-        .contact a {
-            display: inline-block;
-            margin: 10px;
-            color: #fff;
+        .nav {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: white;
+            font-weight: bold;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <header class="hero">
-        <h1>Luis Bernache</h1>
-        <h2>QA Software Test Engineer</h2>
-        <p>"Quality Beyond Limits | Turning Challenges into Opportunities"</p>
-        <a href="#" class="button">Resume</a>
-    </header>
-    
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems...</p>
-    </section>
-    
-    <section class="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Specialist Engineer</h3>
-            <p>Teoresi Inc, Troy, MI, USA</p>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <p>"Quality Beyond Limits | Turning Challenges into Opportunities"</p>
+            <h1>Luis Bernache</h1>
+            <h2>QA Software Test Engineer</h2>
+            <button class="resume-button">Resume</button>
         </div>
-        <div class="job">
-            <h3>Test Engineer</h3>
-            <p>Dextra Technologies, Zapopan, JAL, MX</p>
+        <div class="nav">
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills & Proficiencies</a>
+            <a href="#courses">Courses & Licenses</a>
+            <a href="#projects">Hands on Projects</a>
+            <a href="#contact">Reach Out</a>
         </div>
-    </section>
-    
-    <section class="education">
-        <h2>Education</h2>
-        <p>B.S. in Communications and Electronics Engineering</p>
-        <p>Universidad de Guadalajara (2013-2018)</p>
-    </section>
-    
-    <section class="skills">
-        <h2>Skills & Proficiencies</h2>
-        <ul>
-            <li>Manual Testing, Regression Testing, Functional Testing</li>
-            <li>Bug Tracking: JIRA, TestRail</li>
-            <li>Programming: (Currently Learning) Python, Selenium, Appium</li>
-        </ul>
-    </section>
-    
-    <section class="courses">
-        <h2>Courses & Licenses</h2>
-        <p>ISTQB Foundation Level 2022 Complete Training</p>
-        <p>Automated Software Testing with Python</p>
-    </section>
-    
-    <section class="projects">
-        <h2>Hands-on Projects</h2>
-        <p>Coming soon...</p>
-    </section>
-    
-    <section class="contact">
-        <h2>Reach Out</h2>
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://github.com/yourgithub">GitHub</a>
-        <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a>
-    </section>
+    </div>
 </body>
 </html>
