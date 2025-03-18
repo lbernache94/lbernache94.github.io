@@ -50,6 +50,42 @@
             cursor: pointer;
             margin-top: 10px;
         }
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: left;
+        }
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .experience-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: left;
+        }
         .education-section {
             position: relative;
             height: 100vh;
@@ -108,7 +144,7 @@
         .education-content img {
             width: 150px;
             background: transparent;
-            border-radius: 0%; /* Ensures correct rendering */
+            border-radius: 0%;
         }
     </style>
 </head>
@@ -124,6 +160,17 @@
             </a>
         </div>
     </div>
+
+    <div class="about-section" id="about">
+        <div class="text">
+            <h1>About Me</h1>
+            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems.</p>
+        </div>
+        <div class="image">
+            <img src="images/b69c92ff-43e6-41bb-9a68-6413e3b799a2.JPG" alt="Luis Bernache">
+        </div>
+    </div>
+
     <div class="experience-section" id="experience">
         <h1>Experience</h1>
         <div class="job">
@@ -151,16 +198,17 @@
             </div>
         </div>
     </div>
+
     <div class="education-section" id="education">
         <div class="education-overlay"></div>
         <div class="education-content">
-            <img src="images/udg.png" alt="University Logo">
+            <img src="images/universidadGuadalajara.png" alt="University Logo">
             <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br>2013-2018</h2>
             <p>Former student member of the International Society for Optics and Photonics SPIE & the Optica (formerly OSA) Optical Society America, Advancing Optics and Photonics Worldwide. I got the opportunity to publish a paper for SPIE congress in San Diego California.</p>
             <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11128/1112815/Ex-vivo-characterization-of-human-healthy-colon-and-colorectal-cancer/10.1117/12.2531113.short" target="_blank">Read Published Paper</a>
             <div class="logos-container">
-                <img src="images/spie-logo.png" alt="SPIE Logo">
-                <img src="images/optica-logo.png" alt="Optica Logo">
+                <img src="images/SPIE.PNG" alt="SPIE Logo">
+                <img src="images/images-osa.png" alt="Optica Logo">
             </div>
         </div>
     </div>
