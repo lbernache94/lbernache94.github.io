@@ -14,12 +14,18 @@
         .hero, .about-section {
             position: relative;
             height: 100vh;
-            background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
-            background-position: center 65%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+        .hero {
+            background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
+            background-position: center 65%;
+        }
+        .about-section {
+            background: url('images/about-section-bg.jpg') no-repeat center center/cover; /* Replace with actual image */
+            background-position: center 65%;
         }
         .overlay {
             position: absolute;
@@ -60,39 +66,19 @@
             font-weight: bold;
             text-decoration: none;
         }
-        .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            width: 90%;
-            margin: auto;
-            padding: 50px 0;
+        .about-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 80%;
         }
-        .text {
-            flex: 1;
-            padding: 20px;
-            text-align: left;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-        }
-        .text h1 {
+        .about-content h1 {
             font-size: 3rem;
             font-weight: bold;
         }
-        .text p {
+        .about-content p {
             font-size: 1.2rem;
             line-height: 1.6;
-        }
-        .image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-        .image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
         }
         @media (max-width: 768px) {
             .hero, .about-section {
@@ -123,13 +109,6 @@
                 display: block;
                 padding: 8px;
             }
-            .about-section {
-                flex-direction: column;
-                text-align: center;
-            }
-            .text {
-                padding: 10px;
-            }
         }
     </style>
 </head>
@@ -155,12 +134,10 @@
         </div>
     </div>
     <div class="about-section" id="about">
-        <div class="text">
+        <div class="overlay"></div>
+        <div class="about-content">
             <h1>About Me</h1>
             <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. Skilled in designing and executing comprehensive test cases, identifying defects, and driving product improvements. Proven ability to collaborate with cross-functional teams, ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, scalability, and reliability testing, adhering to industry standards and best practices.</p>
-        </div>
-        <div class="image">
-            <img src="images/about-me-image.png" alt="Luis Bernache">
         </div>
     </div>
 </body>
