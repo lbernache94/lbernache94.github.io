@@ -122,18 +122,29 @@
             z-index: 2;
             max-width: 800px;
         }
-        @media (max-width: 768px) {
-            .about-section, .experience-section {
-                flex-direction: column;
-                text-align: center;
-                height: auto;
-            }
-            .text {
-                padding: 10px;
-            }
-            .image {
-                order: -1;
-            }
+        .education-content p {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        .education-content button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .logos-container img {
+            width: 150px;
         }
     </style>
 </head>
@@ -148,28 +159,10 @@
                 <button class="resume-button">Resume</button>
             </a>
         </div>
-        <div class="nav">
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills & Proficiencies</a>
-            <a href="#courses">Courses & Licenses</a>
-            <a href="#projects">Hands on Projects</a>
-            <a href="#contact">Reach Out</a>
-        </div>
-    </div>
-    <div class="about-section" id="about">
-        <div class="text">
-            <h1>About Me</h1>
-            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems.</p>
-        </div>
-        <div class="image">
-            <img src="images/b69c92ff-43e6-41bb-9a68-6413e3b799a2.JPG" alt="Luis Bernache">
-        </div>
     </div>
     <div class="experience-section" id="experience">
         <h1>Experience</h1>
-        <div class="job">
+         <div class="job">
             <div class="job-description">
                 <strong>2023 - Present</strong><br>
                 <span class="job-title">SPECIALIST ENGINEER</span><br>
@@ -199,6 +192,12 @@
         <div class="education-content">
             <img src="images/udg.png" alt="University Logo">
             <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br>2013-2018</h2>
+            <p>Former student member of the International Society for Optics and Photonics SPIE & the Optica (formerly OSA) Optical Society America, Advancing Optics and Photonics Worldwide. I got the opportunity to publish a paper for SPIE congress in San Diego California.</p>
+            <button>PAPER LINK SITE</button>
+            <div class="logos-container">
+                <img src="images/spie-logo.png" alt="SPIE Logo">
+                <img src="images/optica-logo.png" alt="Optica Logo">
+            </div>
         </div>
     </div>
 </body>
