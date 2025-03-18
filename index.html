@@ -11,7 +11,7 @@
             text-align: center;
             color: white;
         }
-        .hero {
+        .hero, .about-section {
             position: relative;
             height: 100vh;
             background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
@@ -60,7 +60,7 @@
             font-weight: bold;
             text-decoration: none;
         }
-        .container {
+        .about-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -68,12 +68,13 @@
             width: 90%;
             margin: auto;
             padding: 50px 0;
-            background: black;
         }
         .text {
             flex: 1;
             padding: 20px;
             text-align: left;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
         }
         .text h1 {
             font-size: 3rem;
@@ -94,7 +95,7 @@
             border-radius: 10px;
         }
         @media (max-width: 768px) {
-            .hero {
+            .hero, .about-section {
                 height: 100vh;
                 background-position: center 20%;
                 padding: 20px;
@@ -122,7 +123,7 @@
                 display: block;
                 padding: 8px;
             }
-            .container {
+            .about-section {
                 flex-direction: column;
                 text-align: center;
             }
@@ -153,17 +154,13 @@
             <a href="#contact">Reach Out</a>
         </div>
     </div>
-    <div class="container" id="about">
+    <div class="about-section" id="about">
         <div class="text">
             <h1>About Me</h1>
-            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. 
-                Skilled in designing and executing comprehensive test cases, identifying defects, 
-                and driving product improvements. Proven ability to collaborate with cross-functional teams, 
-                ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, 
-                scalability, and reliability testing, adhering to industry standards and best practices.</p>
+            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. Skilled in designing and executing comprehensive test cases, identifying defects, and driving product improvements. Proven ability to collaborate with cross-functional teams, ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, scalability, and reliability testing, adhering to industry standards and best practices.</p>
         </div>
         <div class="image">
-            <img src="images/IMG_5398.jpg" alt="Luis Bernache">
+            <img src="images/about-me-image.png" alt="Luis Bernache">
         </div>
     </div>
 </body>
