@@ -10,22 +10,17 @@
             font-family: Arial, sans-serif;
             text-align: center;
             color: white;
+            background-color: black;
         }
-        .hero, .about-section {
+        .hero {
             position: relative;
             height: 100vh;
+            background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
+            background-position: center 65%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        .hero {
-            background: url('images/9bfc2cd0-71ad-43ef-b104-b5cb3d804b22.JPG') no-repeat center center/cover;
-            background-position: center 65%;
-        }
-        .about-section {
-            background: url('images/about-section-bg.jpg') no-repeat center center/cover; /* Replace with actual image */
-            background-position: center 65%;
         }
         .overlay {
             position: absolute;
@@ -66,48 +61,55 @@
             font-weight: bold;
             text-decoration: none;
         }
-        .about-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            max-width: 80%;
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+            height: 100vh;
         }
-        .about-content h1 {
+        .text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+        .text h1 {
             font-size: 3rem;
             font-weight: bold;
         }
-        .about-content p {
+        .text p {
             font-size: 1.2rem;
             line-height: 1.6;
         }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
         @media (max-width: 768px) {
-            .hero, .about-section {
+            .hero {
                 height: 100vh;
                 background-position: center 20%;
                 padding: 20px;
             }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.2rem;
-            }
-            .resume-button {
-                padding: 8px 16px;
-                font-size: 0.9rem;
-            }
-            .nav {
-                position: relative;
-                bottom: auto;
-                display: flex;
+            .about-section {
                 flex-direction: column;
-                gap: 10px;
-                margin-top: 20px;
+                text-align: center;
+                height: auto;
             }
-            .nav a {
-                font-size: 1rem;
-                display: block;
-                padding: 8px;
+            .text {
+                padding: 10px;
+            }
+            .image {
+                order: -1;
             }
         }
     </style>
@@ -134,10 +136,12 @@
         </div>
     </div>
     <div class="about-section" id="about">
-        <div class="overlay"></div>
-        <div class="about-content">
+        <div class="text">
             <h1>About Me</h1>
             <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. Skilled in designing and executing comprehensive test cases, identifying defects, and driving product improvements. Proven ability to collaborate with cross-functional teams, ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, scalability, and reliability testing, adhering to industry standards and best practices.</p>
+        </div>
+        <div class="image">
+            <img src="images/IMG_5398.jpg" alt="Luis Bernache">
         </div>
     </div>
 </body>
