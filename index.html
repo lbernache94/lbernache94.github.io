@@ -61,38 +61,32 @@
             font-weight: bold;
             text-decoration: none;
         }
-        .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .section {
             max-width: 1200px;
-            width: 90%;
             margin: auto;
-            padding: 50px 0;
-            height: 100vh;
-        }
-        .text {
-            flex: 1;
-            padding: 20px;
+            padding: 50px 20px;
             text-align: left;
         }
-        .text h1 {
-            font-size: 3rem;
+        .experience-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .job {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .job-title {
             font-weight: bold;
         }
-        .text p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+        .company {
+            color: gray;
         }
-        .image {
+        .job-description {
             flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-        .image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
         @media (max-width: 768px) {
             .hero {
@@ -100,16 +94,13 @@
                 background-position: center 20%;
                 padding: 20px;
             }
-            .about-section {
+            .experience-section {
                 flex-direction: column;
                 text-align: center;
-                height: auto;
             }
-            .text {
-                padding: 10px;
-            }
-            .image {
-                order: -1;
+            .job {
+                flex-direction: column;
+                text-align: left;
             }
         }
     </style>
@@ -135,13 +126,33 @@
             <a href="#contact">Reach Out</a>
         </div>
     </div>
-    <div class="about-section" id="about">
-        <div class="text">
-            <h1>About Me</h1>
-            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. Skilled in designing and executing comprehensive test cases, identifying defects, and driving product improvements. Proven ability to collaborate with cross-functional teams, ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, scalability, and reliability testing, adhering to industry standards and best practices.</p>
-        </div>
-        <div class="image">
-            <img src="images/IMG_5398.jpg" alt="Luis Bernache">
+    <div class="section" id="experience">
+        <h1>Experience</h1>
+        <div class="experience-section">
+            <div class="job">
+                <div class="job-description">
+                    <strong>2023 - Present</strong><br>
+                    <span class="job-title">SPECIALIST ENGINEER</span><br>
+                    <span class="company">TEORESI INC, TROY, MI, USA</span>
+                    <p>Led end-to-end validation for embedded systems, ensuring software reliability and compliance. Performed system and integration testing for critical vehicle control units (EVCU, BPCM, IDCM, EDM). Conducted extreme condition testing, improving system stability and performance. Executed interoperability testing, reducing customer-reported issues by 90%. Utilized CANalyzer & CANoe for debugging and system log analysis.</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-description">
+                    <strong>2023 - 2021</strong><br>
+                    <span class="job-title">TEST ENGINEER</span><br>
+                    <span class="company">DEXTRA TECHNOLOGIES A DELOITTE BUSINESS, ZAPOPAN, JAL, MX</span>
+                    <p>Led cross-functional teams in executing manual validation (regression, smoke, exploratory). Developed test plans & test cases, ensuring 100% coverage. Created weekly/monthly reports for performance tracking using Jira & Google Suite. Worked closely with teams to validate hotfixes & verification testing issues.</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-description">
+                    <strong>2021 - 2019</strong><br>
+                    <span class="job-title">VALIDATION ENGINEER</span><br>
+                    <span class="company">MOBILE TEST SERVICES, TLAQUEPAQUE, JAL, MX</span>
+                    <p>Conducted manual testing for Android/iOS network validation. Ensured 100% on-time releases while reducing defect rates by 80%. Defined test strategies & specifications for consistent validation efforts. Utilized QXDM & Shannon Tool for network log analysis and troubleshooting.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
