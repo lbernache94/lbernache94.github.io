@@ -60,41 +60,76 @@
             font-weight: bold;
             text-decoration: none;
         }
-    @media (max-width: 768px) {
-        .hero {
-            height: 100vh;
-            background-position: center 20%; /* Adjust image position for mobile */
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2rem; /* Smaller text on mobile */
-        }
-
-        h2 {
-            font-size: 1.2rem;
-        }
-
-        .resume-button {
-            padding: 8px 16px; /* Slightly smaller button */
-            font-size: 0.9rem;
-        }
-
-        .nav {
-            position: relative;
-            bottom: auto;
+        .container {
             display: flex;
-            flex-direction: column; /* Stack menu items on mobile */
-            gap: 10px;
-            margin-top: 20px;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+            background: black;
         }
-
-        .nav a {
-            font-size: 1rem; /* Make menu links smaller */
-            display: block;
-            padding: 8px;
+        .text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
         }
-    }
+        .text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 100vh;
+                background-position: center 20%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .resume-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .nav {
+                position: relative;
+                bottom: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            .nav a {
+                font-size: 1rem;
+                display: block;
+                padding: 8px;
+            }
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,6 +151,19 @@
             <a href="#courses">Courses & Licenses</a>
             <a href="#projects">Hands on Projects</a>
             <a href="#contact">Reach Out</a>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="text">
+            <h1>About Me</h1>
+            <p>Experienced QA Engineer with over 5 years of expertise in manual and automated testing across mobile, web, and embedded systems. 
+                Skilled in designing and executing comprehensive test cases, identifying defects, 
+                and driving product improvements. Proven ability to collaborate with cross-functional teams, 
+                ensure software reliability, and deliver high-quality products on tight deadlines. Adept at usability, 
+                scalability, and reliability testing, adhering to industry standards and best practices.</p>
+        </div>
+        <div class="image">
+            <img src="images/IMG_5398.jpg" alt="Luis Bernache">
         </div>
     </div>
 </body>
