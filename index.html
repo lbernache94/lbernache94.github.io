@@ -192,6 +192,40 @@
             height: 100%;
             background-color: #333;
         }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: left;
+        }
+        .course {
+            font-size: 16px;
+        }
+        .course strong {
+            font-size: 18px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .logos img {
+            height: 50px;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -316,6 +350,25 @@ Currently learning automation testing across platforms mobile/web with python an
         <div class="skill">
             <p>Spanish (Mexico) Native</p>
             <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Courses & Licenses</h1>
+        <div class="grid">
+            <div class="course"><strong>ISTQB Foundation Level 2022 Complete Training</strong><br>Study the basic concepts of the testing world</div>
+            <div class="course"><strong>Basic Python course</strong><br>Review principles of Python programming and begin to explore automation testing</div>
+            <div class="course"><strong>Automated Software Testing with Python</strong><br>Review principles of Python programming and begin to explore automation testing</div>
+            <div class="course"><strong>Mobile Apps Development</strong><br>Discover the basics of the state-of-the-art in developing a friendly user mobile app</div>
+            <div class="course"><strong>Linux Mastery: Master the Linux Command Line</strong><br>Digging into the LINUX OS and its functionality on development SW</div>
+            <div class="course"><strong>Selenium Webdriver with Python from scratch + frameworks</strong><br>Learn how to automate web user experience functional test cases</div>
+            <div class="course"><strong>5G, 4G-LTE, 3G, 2G Cellular Mobile Communication wireless</strong><br>Learn the know-how of the telecom networks applied on mobile devices</div>
+            <div class="course"><strong>Bash Mastery: The complete guide to bash shell scripting</strong><br>Bash shell scripting to automate tasks, and save time</div>
+            <div class="course"><strong>Appium - mobile testing Android / iOS from scratch + frameworks</strong><br>Discover the use of mobile devices interfaces automation test cases</div>
+        </div>
+        <div class="logos">
+            <img src="images/Udemy-Symbol.png" alt="Udemy">
+            <img src="images/platzi-logo.png" alt="Platzi">
+            <img src="images/activate-google-logo-2017-nuevo-770.jpg" alt="Google Activate">
         </div>
     </div>
 </body>
