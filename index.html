@@ -88,88 +88,66 @@
         }
         .education-section {
             position: relative;
-            min-height: 100vh;
             background: url('images/DALL·E 2025-02-10 10.36.15 - A modern and sleek logo design representing Communications and Electronics Engineering. The logo should incorporate elements such as circuit lines, wi.PNG') no-repeat center center/cover;
+            height: 100vh;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            color: white;
+            padding: 0 5vw;
         }
-            
-        .education-overlay {
+        .education-header {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .education-details {
             position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 1;
+            top: 20%;
+            right: 5%;
+            text-align: right;
         }
-            
-        .education-container {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            padding: 40px;
-            width: 100%;
-            gap: 60px;
+        .education-details h2 {
+            font-size: 1.5rem;
+            margin: 0;
         }
-            
-        .education-text {
-            flex: 1;
+        .education-details p {
+            ont-size: 1.2rem;
+            margin-top: 5px;
         }
-            
-        .education-text h3 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        .university-logo {
+            position: absolute;
+            top: 15%;
+            right: 50%;
+            transform: translateX(50%);
+            height: 120px;
         }
-            
-        .education-text p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 25px;
+        .education-description {
+            position: absolute;
+            bottom: 30%;
+            left: 5vw;
+            width: 40vw;
+            font-size: 1rem;
+            font-weight: 500;
         }
-            
-        .education-text a {
-            display: inline-block;
-            padding: 12px 25px;
-            background: black;
+        .paper-button {
+            background-color: black;
+            border-radius: 50px;
+            padding: 15px 25px;
+            margin-top: 20px;
             color: white;
-            border-radius: 30px;
             font-weight: bold;
-            margin-bottom: 25px;
+            text-align: center;
+            display: inline-block;
             text-decoration: none;
         }
-            
-        .logos-container {
+        .logos {
+            position: absolute;
+            bottom: 5%;
+            left: 5vw;
             display: flex;
-            gap: 25px;
-            margin-top: 10px;
+            gap: 20px;
         }
-            
-        .logos-container img {
-            width: 150px;
-            height: auto;
-        }
-            
-        .education-degree {
-            flex: 1;
-            text-align: center;
-        }
-            
-        .education-degree img {
-            width: 120px;
-            margin-bottom: 20px;
-        }
-            
-        .education-degree h2 {
-            font-size: 22px;
-            font-weight: bold;
-            line-height: 1.4;
+        .logos img {
+            height: 60px;
         }
 
          .container {
@@ -365,29 +343,28 @@ Currently learning automation testing across platforms mobile/web with python an
         </div>
     </div>
 
-<div class="education-section" id="education">
-  <div class="education-overlay"></div>
-  <div class="education-container">
-    <div class="education-text">
-      <h3>Education</h3>
-      <p>
-        Former student member of the International Society for Optics and Photonics SPIE & the Optica (formerly OSA)
-        Optical Society America, Advancing Optics and Photonics Worldwide. I got the opportunity to publish a paper
-        for SPIE congress in San Diego California.
-      </p>
-      <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11128/1112815/Ex-vivo-characterization-of-human-healthy-colon-and-colorectal-cancer/10.1117/12.2531113.short"
-         target="_blank">Paper Link Site</a>
-      <div class="logos-container">
-        <img src="images/SPIE.PNG" alt="SPIE Logo">
-        <img src="images/images-osa.png" alt="Optica Logo">
-      </div>
-    </div>
-    <div class="education-degree">
-      <img src="images/universidadGuadalajara.png" alt="University Logo">
-      <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br>2013–2018</h2>
-    </div>
-  </div>
-</div>
+    <section class="education-section">
+        <div class="education-header">Education</div>
+        <img src="images/universidadGuadalajara.png" alt="University Logo" class="university-logo">
+        <div class="education-details">
+          <h2>B.S. IN COMMUNICATIONS AND</h2>
+          <h2>ELECTRONICS ENGINEERING</h2>
+          <p>2013–2018</p>
+        </div>
+        <div class="education-description">
+          Former student member of the international<br>
+          society for optics and photonics SPIE & the<br>
+          Optica (formerly OSA) Optical Society<br>
+          America, Advancing Optics and Photonics<br>
+          Worldwide. I got the opportunity to publish a<br>
+          paper for SPIE congress in San Diego California<br>
+          <div class="paper-button">PAPER LINK SITE</div>
+        </div>
+        <div class="logos">
+          <img src="images/SPIE.PNG" alt="SPIE Logo">
+          <img src="images/images-osa.png" alt="Optica Logo">
+        </div>
+    </section>
     
     <div class="container">
         <h1>Skills & Proficiencies</h1>
