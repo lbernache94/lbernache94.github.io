@@ -86,81 +86,90 @@
             padding: 50px 20px;
             text-align: left;
         }
+        .education-section {
+            position: relative;
+            min-height: 100vh;
+            background: url('images/background.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+            
+        .education-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+            
         .education-container {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-              max-width: 1200px;
-              width: 100%;
-              padding: 40px 80px;
-              color: white;
-              position: relative;
-              z-index: 2;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            padding: 40px;
+            width: 100%;
+            gap: 60px;
         }
             
         .education-text {
-              flex: 1;
-              padding-right: 60px;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-        }
-            
-        .education-degree {
-              flex: 1;
-              text-align: center;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-        }
-            
-        .education-degree img {
-              width: 100px;
-              margin-bottom: 15px;
-        }
-            
-        .education-degree h2 {
-              font-size: 24px;
-              font-weight: bold;
-              line-height: 1.4;
-              color: white;
-              text-align: center;
+            flex: 1;
         }
             
         .education-text h3 {
-              font-size: 36px;
-              font-weight: bold;
-              margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
             
         .education-text p {
-              font-size: 18px;
-              line-height: 1.6;
-              margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
             
         .education-text a {
-              display: inline-block;
-              background-color: black;
-              color: white;
-              text-decoration: none;
-              padding: 12px 28px;
-              border-radius: 30px;
-              font-weight: bold;
-              font-size: 16px;
-              margin-bottom: 30px;
+            display: inline-block;
+            padding: 12px 25px;
+            background: black;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-decoration: none;
         }
             
         .logos-container {
-              display: flex;
-              gap: 25px;
-              justify-content: flex-start;
+            display: flex;
+            gap: 25px;
+            margin-top: 10px;
         }
             
         .logos-container img {
-              width: 140px;
-              height: auto;
+            width: 150px;
+            height: auto;
+        }
+            
+        .education-degree {
+            flex: 1;
+            text-align: center;
+        }
+            
+        .education-degree img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+            
+        .education-degree h2 {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.4;
         }
 
          .container {
@@ -356,7 +365,7 @@ Currently learning automation testing across platforms mobile/web with python an
         </div>
     </div>
 
-    <div class="education-section" id="education">
+<div class="education-section" id="education">
   <div class="education-overlay"></div>
   <div class="education-container">
     <div class="education-text">
@@ -369,13 +378,13 @@ Currently learning automation testing across platforms mobile/web with python an
       <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11128/1112815/Ex-vivo-characterization-of-human-healthy-colon-and-colorectal-cancer/10.1117/12.2531113.short"
          target="_blank">Paper Link Site</a>
       <div class="logos-container">
-        <img src="images/SPIE.PNG" alt="SPIE Logo" />
-        <img src="images/images-osa.png" alt="Optica Logo" />
+        <img src="images/SPIE.PNG" alt="SPIE Logo">
+        <img src="images/images-osa.png" alt="Optica Logo">
       </div>
     </div>
     <div class="education-degree">
-      <img src="images/universidadGuadalajara.png" alt="University Logo" />
-      <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br />2013-2018</h2>
+      <img src="images/universidadGuadalajara.png" alt="University Logo">
+      <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br>2013–2018</h2>
     </div>
   </div>
 </div>
