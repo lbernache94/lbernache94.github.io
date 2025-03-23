@@ -91,12 +91,10 @@
             height: 100vh;
             background: url('images/DALL·E 2025-02-10 10.36.15 - A modern and sleek logo design representing Communications and Electronics Engineering. The logo should incorporate elements such as circuit lines, wi.PNG') no-repeat center center/cover;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 50px;
         }
+
         .education-overlay {
             position: absolute;
             top: 0;
@@ -104,48 +102,78 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
         }
-        .education-content {
+
+        .education-container {
             position: relative;
             z-index: 2;
-            max-width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 60px;
+            color: white;
         }
-        .education-content h2 {
-            font-size: 28px;
+
+        .education-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .education-text h3 {
+            font-size: 36px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
-        .education-content p {
+
+        .education-text p {
             font-size: 18px;
-            margin-top: 15px;
-            line-height: 1.5;
-            max-width: 750px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            max-width: 600px;
         }
-        .education-content a {
+
+        .education-text a {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: black;
+            background-color: black;
             color: white;
             text-decoration: none;
+            padding: 12px 28px;
             border-radius: 30px;
-            font-size: 18px;
             font-weight: bold;
+            font-size: 16px;
         }
+
         .logos-container {
             display: flex;
-            justify-content: center;
-            gap: 30px;
+            gap: 25px;
             margin-top: 30px;
         }
+
         .logos-container img {
-            width: 180px;
-            background: transparent;
-        }
-        .education-content img {
             width: 150px;
-            background: transparent;
-            border-radius: 0%;
+            height: auto;
         }
+
+        .education-degree {
+            flex: 1;
+            text-align: center;
+        }
+
+        .education-degree img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .education-degree h2 {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
          .container {
             max-width: 800px;
             margin: 50px auto;
@@ -340,18 +368,29 @@ Currently learning automation testing across platforms mobile/web with python an
     </div>
 
     <div class="education-section" id="education">
-        <div class="education-overlay"></div>
-        <div class="education-content">
-            <img src="images/universidadGuadalajara.png" alt="University Logo">
-            <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br>2013-2018</h2>
-            <p>Former student member of the International Society for Optics and Photonics SPIE & the Optica (formerly OSA) Optical Society America, Advancing Optics and Photonics Worldwide. I got the opportunity to publish a paper for SPIE congress in San Diego California.</p>
-            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11128/1112815/Ex-vivo-characterization-of-human-healthy-colon-and-colorectal-cancer/10.1117/12.2531113.short" target="_blank">Read Published Paper</a>
-            <div class="logos-container">
-                <img src="images/SPIE.PNG" alt="SPIE Logo">
-                <img src="images/images-osa.png" alt="Optica Logo">
-            </div>
-        </div>
+  <div class="education-overlay"></div>
+  <div class="education-container">
+    <div class="education-text">
+      <h3>Education</h3>
+      <p>
+        Former student member of the International Society for Optics and Photonics SPIE & the Optica (formerly OSA)
+        Optical Society America, Advancing Optics and Photonics Worldwide. I got the opportunity to publish a paper
+        for SPIE congress in San Diego California.
+      </p>
+      <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11128/1112815/Ex-vivo-characterization-of-human-healthy-colon-and-colorectal-cancer/10.1117/12.2531113.short"
+         target="_blank">Paper Link Site</a>
+      <div class="logos-container">
+        <img src="images/SPIE.PNG" alt="SPIE Logo" />
+        <img src="images/images-osa.png" alt="Optica Logo" />
+      </div>
     </div>
+    <div class="education-degree">
+      <img src="images/universidadGuadalajara.png" alt="University Logo" />
+      <h2>B.S. IN COMMUNICATIONS AND ELECTRONICS ENGINEERING<br />2013-2018</h2>
+    </div>
+  </div>
+</div>
+    
     <div class="container">
         <h1>Skills & Proficiencies</h1>
         <div class="section-title">Technical Skills</div>
