@@ -169,12 +169,15 @@
         }
     
         .logos-inline {
-          flex: 1;
+          position: absolute;
+          bottom: 30px;
+          right: 40px;
           display: flex;
           flex-direction: row;
           gap: 30px;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
+          z-index: 3;
         }
     
         .logos-inline img {
@@ -185,7 +188,6 @@
         .logos-inline img:hover {
           transform: scale(1.05);
         }
-
          .container {
             max-width: 800px;
             margin: 50px auto;
